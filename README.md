@@ -205,19 +205,6 @@ Cada función hace UN trabajo específico:
 
 **Ventaja:** Si cambia un requerimiento, solo modificas UNA funcion.
 
-### Validación temprana
-
-```python
-# Detectar problemas INMEDIATAMENTE
-df = df.dropna(subset=['CEDULA'])  # Cedula obligatoria
-```
-
-No esperar a que llegue a Cosmos DB para descubrir errores.
-
-**Ver detalles completos:** `docs/DECISIONES_DISENO.md`
-
----
-
 ## Alcance y Limitaciones
 
 ### Lo que está completo
@@ -269,8 +256,10 @@ def limpiar_incapacidades(df):
 
 ## Cómo Ejecutar
 
-### Requisitos
+### **Importante:** Asegúrese de actualizar la ruta del archivo .xlsx para que los códigos funcionen correctamente.
+En mi caso usé la ruta por defecto porque importé directamente mi archivo a mi entorno de Colab.
 
+### Requisitos
 ```bash
 pip install pandas openpyxl jupyter
 ```
@@ -341,18 +330,6 @@ python reto3_correccion.py
 2. **Integración completa Reto 1 + Reto 3**
    - Pipeline con validación incorporada
    - Alertas automaticas de errores
-
-3. **Logging estructurado**
-   - Trazabilidad de cada registro procesado
-   - Métricas de calidad por ejecución
-
-4. **Configuracion externalizada**
-   ```yaml
-   validation_rules:
-     dias_min: 1
-     dias_max: 365
-     allow_z_codes_in_disabilities: false
-   ```
 
 ---
 
