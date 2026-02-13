@@ -194,4 +194,4 @@ y descubrir el error al intentar cargar a Cosmos DB.
 
 
 **Fecha de entrega:** Febrero 12, 2026  
-**Ultima revision:** Febrero 12, 2026, 17:00
+**Ultima revision:** Febrero 12, 2026, 23:00
