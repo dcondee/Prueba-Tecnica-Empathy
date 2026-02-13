@@ -130,7 +130,7 @@ La metodología implementada permite detectar este tipo de problemas:
 - Análisis de normalizacion de textos
 
 **Nota sobre queries SQL:**
-El PDF indica que se puede usar "SQL de Cosmos o Python". Opte por **analisis 100% en Python** 
+El PDF indica que se puede usar "SQL de Cosmos o Python". Opté por **analisis 100% en Python** 
 usando pandas, que permite debugging más rápido y es más fácil de iterar durante la investigación.
 
 **Código:** `reto2_debugging.py` o Notebook celda 7-8
